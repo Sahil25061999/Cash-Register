@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles.css" rel="stylesheet" />
+    <title>Cash Register</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Cash Register</h1>
+      <p class="description">
+        Enter the price and cash given and know the number of notes to be
+        returned.
+      </p>
+      <label class="price" for="price"> Price</label>
+      <input type="number" id="price" />
+
+      <label for="cash-given" class="cash-given">Cash Given</label>
+      <input type="number" id="cash-given" />
+      <button class="check btn">Check</button>
+      <p class="error-message"></p>
+      <table class="table">
+        <caption>
+          Register
+        </caption>
+        <tr class="amount-row row">
+          <th>No. of notes</th>
+          <td class="no-of-note"></td>
+          <td class="no-of-note"></td>
+          <td class="no-of-note"></td>
+          <td class="no-of-note"></td>
+          <td class="no-of-note"></td>
+          <td class="no-of-note"></td>
+        </tr>
+        <tr class="row">
+          <th>denomination</th>
+          <td>2000</td>
+          <td>500</td>
+          <td>100</td>
+          <td>20</td>
+          <td>10</td>
+          <td>1</td>
+        </tr>
+      </table>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
